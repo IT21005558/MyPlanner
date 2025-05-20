@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>MyPlanner</display-name>
+  
+  
+  <servlet>
+  
+  	<servlet-name>LoginClient</servlet-name>
+  	<servlet-class>com.client.LoginServlet</servlet-class>
+  	
+  </servlet>
+  
+ <servlet-mapping>
+ 	<servlet-name>LoginClient</servlet-name>
+ 	<url-pattern>/loginclient</url-pattern>
+ 
+ 
+ </servlet-mapping>
+ 
+ 
+  <servlet>
+    <servlet-name>RegisterClient</servlet-name>
+    <servlet-class>com.client.registerclientServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RegisterClient</servlet-name>
+    <url-pattern>/registerclient</url-pattern>
+  </servlet-mapping>
+ 
+ 
+ <servlet>
+  
+  	<servlet-name>UpdateClient</servlet-name>
+  	<servlet-class>com.client.updateclientServlet</servlet-class>
+  	
+  </servlet>
+  
+ <servlet-mapping>
+ 	<servlet-name>UpdateClient</servlet-name>
+ 	<url-pattern>/updateclient</url-pattern>
+ 
+ 
+ </servlet-mapping>
+ 
+ 
+ 
+ <servlet>
+  
+  	<servlet-name>DeleteClient</servlet-name>
+  	<servlet-class>com.client.deleteclientServlet</servlet-class>
+  	
+  </servlet>
+  
+ <servlet-mapping>
+ 	<servlet-name>DeleteClient</servlet-name>
+ 	<url-pattern>/deleteclient</url-pattern>
+ 
+ 
+ </servlet-mapping>
+  
+  
+  
+    <servlet>
+  
+  	<servlet-name>LoginVendor</servlet-name>
+  	<servlet-class>com.vendor.VloginServlet</servlet-class>
+  	
+  </servlet>
+  
+ <servlet-mapping>
+ 	<servlet-name>LoginVendor</servlet-name>
+ 	<url-pattern>/loginvendor</url-pattern>
+ 
+ 
+ </servlet-mapping>
+ 
+  
+ 
+  <servlet>
+  
+  	<servlet-name>RegisterVendor</servlet-name>
+  	<servlet-class>com.vendor.registervendorServlet</servlet-class>
+  	
+  </servlet>
+  
+ <servlet-mapping>
+ 	<servlet-name>RegisterVendor</servlet-name>
+ 	<url-pattern>/registervendor</url-pattern>
+ 
+ 
+ </servlet-mapping>
+ 
+ 
+ 
+  <servlet>
+  
+  	<servlet-name>DeleteVendor</servlet-name>
+  	<servlet-class>com.vendor.deletevendorServlet</servlet-class>
+  	
+  </servlet>
+  
+ <servlet-mapping>
+ 	<servlet-name>DeleteVendor</servlet-name>
+ 	<url-pattern>/deletevendor</url-pattern>
+ 
+ 
+ </servlet-mapping>
+ 
+ 
+ <servlet>
+  
+  	<servlet-name>UpdateVendor</servlet-name>
+  	<servlet-class>com.vendor.updatevendorServlet</servlet-class>
+  	
+  </servlet>
+  
+ <servlet-mapping>
+ 	<servlet-name>UpdateVendor</servlet-name>
+ 	<url-pattern>/updatevendor</url-pattern>
+ 
+ 
+ </servlet-mapping>
+ 
+ <servlet>
+  
+  	<servlet-name>Booking</servlet-name>
+  	<servlet-class>com.booking.BookingServlet</servlet-class>
+  	
+  </servlet>
+  
+ <servlet-mapping>
+ 	<servlet-name>Booking</servlet-name>
+ 	<url-pattern>/bookingevent</url-pattern>
+ 
+ </servlet-mapping>
+ 
+ <servlet>
+  
+  	<servlet-name>UpdateBooking</servlet-name>
+  	<servlet-class>com.booking.UpdateBookingServlet</servlet-class>
+  	
+  </servlet>
+  
+ <servlet-mapping>
+ 	<servlet-name>UpdateBooking</servlet-name>
+ 	<url-pattern>/updatebooking</url-pattern>
+ 
+ </servlet-mapping>
+ 
+ <servlet>
+  
+  	<servlet-name>ViewBooking</servlet-name>
+  	<servlet-class>com.booking.ViewBookingServlet</servlet-class>
+  	
+  </servlet>
+  
+ <servlet-mapping>
+ 	<servlet-name>ViewBooking</servlet-name>
+ 	<url-pattern>/viewbooking</url-pattern>
+ 
+ </servlet-mapping>
+ 
+ 
+  <servlet>
+  
+  	<servlet-name>DeleteBooking</servlet-name>
+  	<servlet-class>com.booking.DeleteBookingServlet</servlet-class>
+  	
+  </servlet>
+  
+ <servlet-mapping>
+ 	<servlet-name>DeleteBooking</servlet-name>
+ 	<url-pattern>/deletebooking</url-pattern>
+ 
+ </servlet-mapping>
+ 
+ 
+ 
+  
+  
+  
+  
+  
+  <welcome-file-list>
+    <welcome-file>homepage.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
